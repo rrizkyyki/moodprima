@@ -17,6 +17,7 @@
     background-image: url('assets/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .btn-outline-success {
@@ -31,6 +32,8 @@
     filter: brightness(1.30);
     background-color: #6ECCAF !important;
 }
+
+
 
 /* about */
 .about {
@@ -51,6 +54,27 @@
     color: #6ECCAF;
 }
 
+.about-pict img {
+    margin-left: 180px;
+}
+
+/* RESPONSIVE ABOUT */
+@media (max-width:480px)  {
+
+    .about-desc {
+        margin-top: 25px;
+    }
+
+    .about-pict img {
+        width: 70%;
+        margin-top: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 
 /* join us */
 .join-us {
@@ -68,6 +92,26 @@
     background-color: #6ECCAF !important;
 }
 
+.join-us img {
+    width: 70%;
+}
+
+/* RESPONSIVE JOIN US */
+@media (max-width:480px)  {
+
+    .join-us img {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+/* testimoni */
 .profile {
     background-image: url('assets/testimoni2.jpg');
     background-repeat: no-repeat;
@@ -80,6 +124,8 @@
     position: relative;
     z-index: 1;
 }
+
+
 
 /* contact */
 .contact-icon {
@@ -113,6 +159,18 @@
     color: #7CCEB4;
 }
 
+/* RESPONSIVE CONTACT */
+@media (max-width:480px)  {
+
+    .contact-maps iframe {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
 /* footer */
 footer {
     background-color: #2F9E7B;
@@ -126,4 +184,23 @@ footer {
 .footer-top {
     margin-left: 90px;
     margin-right: 90px;
+}
+
+.footer-title {
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width:480px)  {
+
+    .border-top {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer-title {
+        display: block;
+        margin-bottom: 40px;
+    }
+
 }
