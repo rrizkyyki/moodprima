@@ -1,16 +1,35 @@
-/* bootstrap class */
-
-/* nav default bg */
-/* bg-body-tertiary */
-
-/* end bootstrap class */
-
 /* style here */
+/* smooth scroll */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 15vh;
+}
 
+/* navbar */
 .active {
     color: #6ECCAF !important;
 }
 
+.nav-link:hover {
+    color: #2F9E7B !important;
+}
+
+.bg-transparent {
+    background-color: white !important;
+    opacity: 0.8 !important;
+    transition: all 0.6s ease-in-out;
+}
+
+.bg-transparent a {
+    color: black;
+    opacity: 1 !important;
+}
+
+.bg-white {
+    transition: all 0.6s ease-in-out;
+}
+
+/* banner or hero image */
 .banner {
     height: 100vh;
     width: 100%;

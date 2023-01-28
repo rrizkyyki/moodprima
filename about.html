@@ -7,9 +7,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <body>
+
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-transparent fixed-top shadow" id="navbar">
+        <nav class="navbar navbar-expand-lg bg-white">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/logo.png" alt="Bootstrap" width="100%" height="100%">
@@ -20,34 +21,29 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link px-3" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link px-3 active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#about">About us</a>
+                    <a class="nav-link px-3" href="#">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#services">Services</a>
+                    <a class="nav-link px-3" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#join-with-us">Join with us</a>
+                    <a class="nav-link px-3" href="#">Join with us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#testimoni">Testimoni</a>
+                    <a class="nav-link px-3" href="#">Testimoni</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#contact">Contact</a>
+                    <a class="nav-link px-3" href="#">Contact</a>
                 </li>
                 </ul>
             </div>
             </div>
         </nav>
 
-        <!-- <div data-bs-spy="scroll" data-bs-target="#navbar"> -->
-            
-        <!-- </div> -->
-
         <!-- banner -->
-        <section id="home">
         <div class="banner">
             <div class="container">
                 <div class="col-6 col-md-6">
@@ -63,10 +59,8 @@
                 </b>
             </div>
         </div>
-        </section>
 
         <!-- about us -->
-        <section id="about">
         <div class="about pt-5 pb-5">
             <div class="container">
 
@@ -89,10 +83,8 @@
 
             </div>
         </div>
-        </section>
 
         <!-- services -->
-        <section id="services">
         <div class="services pt-5 pb-5">
             <div class="container">
 
@@ -138,10 +130,8 @@
                 </div>
             </div>
         </div>
-        </section>
 
         <!-- join us -->
-        <section id="join-with-us">
         <div class="container">
             <div class="row">
                 <h1 class="text-center pb-5">JOIN <span style="color: #6ECCAF;">WITH US</span></h1>
@@ -172,10 +162,8 @@
                 </div>
             </div>
         </div>
-        </section>
 
         <!-- testimonials -->
-        <section id="testimoni">
         <div class="testimonials pt-5 pb-5">
             <div class="container">
 
@@ -251,7 +239,6 @@
 
             </div>
         </div>
-        </section>
 
         <!-- more cards -->
         <div class="container pb-5">
@@ -281,7 +268,6 @@
         </div>
 
         <!-- contact -->
-        <section id="contact">
         <div class="contact pb-5">
             <div class="container">
                 <div class="row">
@@ -338,7 +324,6 @@
                 </div>
             </div>
         </div>
-        </section>
 
         <!-- footer -->
         <footer class="pb-5 pt-5">
@@ -424,18 +409,5 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <script>
-            // navbar scrolling fade in and out
-            var nav = document.querySelector('nav');
-            window.addEventListener('scroll', function(){
-                if(window.pageYOffset > 200) {
-                nav.classList.add('bg-white');
-                nav.classList.remove('bg-transparent');
-                } else {
-                nav.classList.add('bg-transparent');
-                nav.classList.remove('bg-white');
-                }
-            });
-        </script>
     </body>
 </html>
